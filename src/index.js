@@ -4,11 +4,11 @@ import ReactDOM from "react-dom/client";
 import Create from "./components/create/Create";
 import Quiz from "./components/quiz/Quiz";
 import Leaderboard from "./components/leaderboard/Leaderboard";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/create" element={<Create />}></Route>
       <Route path="/quiz">
@@ -18,5 +18,5 @@ root.render(
         <Route path=":id" element={<Leaderboard />}></Route>
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
