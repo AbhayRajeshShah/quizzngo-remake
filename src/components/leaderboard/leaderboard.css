@@ -1,0 +1,23 @@
+.leaderboard {
+  width: 80vw;
+  margin: 3rem auto;
+  box-shadow: 0 0 20px #c3c3c3;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.leaderboard-title {
+  display: flex;
+  justify-content: center;
+}
+.place {
+  display: flex;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  background-color: #7bffca;
+  font-size: 1.25rem;
+  font-family: "Comic Neue";
+}
+.place * {
+  width: 10rem;
+  margin: 2rem;
+}

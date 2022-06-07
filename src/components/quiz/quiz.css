@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+.click {
+  width: auto;
+  height: auto;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  outline: none;
+  margin: 2rem;
+  padding: 1rem 2rem;
+}
+.click:hover {
+  background-color: #7bffca;
+  border: 1px solid #7bffca;
+  cursor: pointer;
+}
+.quiz {
+  position: relative;
+  width: 80vw;
+  margin: 4rem auto;
+  text-align: center;
+  box-shadow: 0 0 10px #c3c3c3;
+}
+.quiz .q {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+  background-color: #059669;
+  font-family: "Comic Neue", cursive;
+}
+.time {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  border-radius: 999px;
+  position: absolute;
+  right: -1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a7f3d0;
+  top: -3rem;
+}
+.score {
+  background-color: #a7f3d0;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.25rem;
+  top: -4rem;
+  left: -2rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitted .user {
+  border: 1px solid black;
+}
+
+.leaderboard-popup {
+  margin: 3rem auto;
+  padding: 2rem;
+  width: max-content;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 20px #000;
+  border-radius: 0.5rem;
+}
+.leaderboard-popup button {
+  width: auto;
+  height: auto;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.leaderboard-popup button * {
+  text-decoration: none;
+  color: black;
+}
+.leaderboard-popup p {
+  font-family: "Comic Neue";
+}
+.leaderboard-popup .greet {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
