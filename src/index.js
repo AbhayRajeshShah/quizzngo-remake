@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import App from "./App"; TODO:MAKE Homepage
+import App from "./App";
 import Create from "./components/create/Create";
 import Quiz from "./components/quiz/Quiz";
 import Leaderboard from "./components/leaderboard/Leaderboard";
@@ -10,6 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <HashRouter>
     <Routes>
+      <Route path="" element={<App />}></Route>
       <Route path="/create" element={<Create />}></Route>
       <Route path="/quiz">
         <Route path=":id" element={<Quiz />}></Route>

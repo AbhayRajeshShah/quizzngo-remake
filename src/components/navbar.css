@@ -1,0 +1,32 @@
+.navbar {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dbfff1;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.nav-btn {
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  font-size: 1.25rem;
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+.nav-btn * {
+  text-decoration: none;
+  color: black;
+}
+.nav-btn:hover {
+  background: #7bffca;
+  border-color: #7bffca;
+}
+
+.title {
+  font-family: monospace;
+  font-weight: bold;
+}
