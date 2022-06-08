@@ -25,31 +25,32 @@ const Quiz = () => {
   const [found, setFound] = useState(false);
 
   const check = (e) => {
+    let scores = score;
     //check if correctAns
     if (quiz.questions[no].correctAns === e.target.innerText) {
       //Add score and update value
-      let scores = score + Math.round(time * 16.666);
+      scores += Math.round(time * 16.666);
       setScore(scores);
+    }
 
-      //check if its the last question if not display next Q
-      if (quiz.questions.length - 1 > no) {
-        let n = no;
-        n++;
-        clearTimeout(timeout);
-        setNo(n);
-        setTime(60);
-      }
-      //if current Q is last Q update db with user score
-      if (quiz.questions.length - 1 === no) {
-        let temp = players;
-        temp[temp.length - 1].score = scores;
-        db.collection("quizzes")
-          .doc(id)
-          .update({ users: temp })
-          .then(() => {
-            setDone(true);
-          });
-      }
+    //check if its the last question if not display next Q
+    if (quiz.questions.length - 1 > no) {
+      let n = no;
+      n++;
+      clearTimeout(timeout);
+      setNo(n);
+      setTime(60);
+    }
+    //if current Q is last Q update db with user score
+    if (quiz.questions.length - 1 === no) {
+      let temp = players;
+      temp[temp.length - 1].score = scores;
+      db.collection("quizzes")
+        .doc(id)
+        .update({ users: temp })
+        .then(() => {
+          setDone(true);
+        });
     }
   };
 
