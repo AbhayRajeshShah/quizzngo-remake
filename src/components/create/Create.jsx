@@ -84,9 +84,9 @@ const Create = () => {
         style={{ display: submitted ? "block" : "none" }}
       >
         <p>Congratulations !</p>
-        <button>
-          <Link to={`/quiz/${quizId}`}>Link To Quiz</Link>
-        </button>
+        <Link to={`/quiz/${quizId}`}>
+          <button>Link To Quiz</button>
+        </Link>
       </div>
 
       <div className="added" style={{ display: added ? "block" : "none" }}>

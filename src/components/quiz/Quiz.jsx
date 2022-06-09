@@ -115,10 +115,9 @@ const Quiz = () => {
       return (
         <div className="leaderboard-popup">
           <p className="greet">Congratulations !</p>
-          <p className="final-score">Your Score : {score}</p>
-          <button>
-            <Link to={`/leaderboard/${id}`}>Leaderboard </Link>
-          </button>
+          <Link to={`/leaderboard/${id}`}>
+            <button>Leaderboard</button>
+          </Link>
         </div>
       );
     } else {
