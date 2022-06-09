@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/quizzngo-remake/static/css/main.fd37ed5e.css",
-    "main.js": "/quizzngo-remake/static/js/main.7c63cd0a.js",
+    "main.js": "/quizzngo-remake/static/js/main.ce621564.js",
     "index.html": "/quizzngo-remake/index.html",
     "main.fd37ed5e.css.map": "/quizzngo-remake/static/css/main.fd37ed5e.css.map",
-    "main.7c63cd0a.js.map": "/quizzngo-remake/static/js/main.7c63cd0a.js.map"
+    "main.ce621564.js.map": "/quizzngo-remake/static/js/main.ce621564.js.map"
   },
   "entrypoints": [
     "static/css/main.fd37ed5e.css",
-    "static/js/main.7c63cd0a.js"
+    "static/js/main.ce621564.js"
   ]
 }
